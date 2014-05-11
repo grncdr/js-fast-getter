@@ -1,6 +1,6 @@
 {
   "name": "fast-getter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create lazy properties that replace themselves with normal ones",
   "main": "index.js",
   "scripts": {
