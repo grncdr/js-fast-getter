@@ -1,6 +1,6 @@
 # fast-getter
 
-[![browser support](https://ci.testling.com/grncdr/js-is-function.png)](https://ci.testling.com/grncdr/js-is-function)
+[![browser support](https://ci.testling.com/grncdr/js-fast-getter.png)](https://ci.testling.com/grncdr/js-fast-getter)
 
 Shorthand for efficient, lazy, self-replacing getter.
 
