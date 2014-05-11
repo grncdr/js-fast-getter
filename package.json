@@ -1,0 +1,47 @@
+{
+  "name": "fast-getter",
+  "version": "0.0.0",
+  "description": "Create lazy properties that replace themselves with normal ones",
+  "main": "index.js",
+  "scripts": {
+    "test": "markdown-code-blocks -t javascript < README.md > test.js && browserify -t coverify test.js | node | coverify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grncdr/js-fast-getter.git"
+  },
+  "keywords": [
+    "getter",
+    "es5",
+    "accessor",
+    "lazy"
+  ],
+  "author": "Stephen Sugden <me@stephensugden.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grncdr/js-fast-getter/issues"
+  },
+  "homepage": "https://github.com/grncdr/js-fast-getter",
+  "devDependencies": {
+    "browserify": "^4.1.2",
+    "coverify": "^1.0.6",
+    "markdown-code-blocks": "0.0.1"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "iexplore/9.0..latest",
+      "firefox/4.0..6.0",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/11..latest",
+      "opera/next",
+      "safari/latest",
+      "ipad/6..latest",
+      "iphone/6..latest",
+      "android-browser/latest"
+    ]
+  }
+}
