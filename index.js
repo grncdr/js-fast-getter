@@ -1,12 +1,17 @@
 'use strict';
 
 module.exports = function fastGetter (object, name, enumerable, get) {
+  Object.defineProperty(object, name, module.exports.descriptor(name, enumerable, get));
+};
+
+module.exports.descriptor = function (name, enumerable, get) {
   if (typeof enumerable === 'function') {
     get = enumerable;
     enumerable = false;
   }
 
-  Object.defineProperty(object, name, {
+  return {
+    isDescriptor: true,
     get: function () {
       var value = get.call(this);
       Object.defineProperty(this, name, {
@@ -26,5 +31,5 @@ module.exports = function fastGetter (object, name, enumerable, get) {
 
     configurable: true,
     enumerable: enumerable,
-  });
+  };
 };
